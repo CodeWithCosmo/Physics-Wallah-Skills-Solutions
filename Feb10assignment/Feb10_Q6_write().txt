@@ -1,0 +1,1 @@
+'write()' method is used to write all the data as it is passed to write() method
