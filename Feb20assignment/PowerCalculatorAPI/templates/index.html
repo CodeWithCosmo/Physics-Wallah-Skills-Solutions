@@ -1,0 +1,21 @@
+{% block head %}
+
+<title>PowerCalculator</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+
+{% block body %}
+<div class="content">
+    <h1>Power Calculutor</h1>
+    <h3>Enter Base & Power</h3>
+
+
+    <div class="form">
+        <form action="/power" method="POST">
+            <input type="text" name="base" id="base" placeholder="Base">
+            <input type="text" name="power" id="power" placeholder="Power">
+            <input type="submit" value="Calculate">
+        </form>
+    </div>
+</div>
+{% endblock %}
